@@ -1,0 +1,260 @@
+/*
+KISSY CSS Reset
+理念：清除和重置是紧密不可分的
+特色：1.适应中文 2.基于最新主流浏览器
+维护：玉伯(lifesinger@gmail.com), 正淳(ragecarrier@gmail.com)
+*/
+ 
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+ 
+/* 设置默认字体 */
+body,
+button, input, select, textarea { /* for ie */
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", "\5fae\8f6f\96c5\9ed1", sans-serif /* 用ascii 支持任意编码 分别是宋体 微软雅黑 */
+}
+ 
+h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+ 
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+ 
+b, strong {font-weight: normal; } /* 取消加粗 */
+ 
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+ 
+/* 重置文本格式元素 */
+a {
+    text-decoration: none;
+    color: inherit; /* a继承字体颜色后不用单独对a设置颜色 设置父元素即可  */
+}
+a:hover { text-decoration: underline; }
+ 
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+ 
+q:before, q:after { content: ''; }
+ 
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+ 
+input:focus {
+    outline: none
+}
+ 
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ 
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+ 
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+ 
+.cf:before,
+.cf:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden
+}
+ 
+.cf:after {
+    clear: both
+}
+ 
+.cf {
+    zoom: 1
+}
+ 
+.pr {
+    position: relative
+}
+ 
+.pa {
+    position: absolute
+}
+ 
+.fl {
+    float: left
+}
+ 
+.fr {
+    float: right
+}
+ 
+.sup {
+    vertical-align: super;
+    font-size: 60%
+}
+ 
+.sub {
+    vertical-align: sub;
+    font-size: 60%
+}
+/* reset end */
+html{
+    height: 100%;
+}
+body{
+    width:100%;
+    height: 100%;
+    background:url(images/background_04.jpg) repeat-x center top #292a90;
+}
+.backgroundimg{
+    height: 100%;
+    width: 100%;
+    /*height:1000px;*/
+    background:url(images/background_06.png) repeat left top;
+}
+.wrapper{
+    height: 100%;
+    width:1000px;
+    margin:0 auto;
+}
+header{
+    height: 57px;
+    padding:30px 0 50px;
+}
+.logo a{
+    display:block;
+    width:269px;
+    height: 57px;
+    background:url(images/logo_03.png) no-repeat center;
+    color:#fff;
+    font-size: 48px;
+    text-indent: -9999px;
+}
+nav{
+    width:24%;
+    text-align: right;
+}
+nav h2{
+    font-size: 14px;
+    color:#ffffff;
+}
+nav h2.on{
+    background:url(images/menu_left_bg_07.png) no-repeat left center;
+}
+nav h2:hover{
+    background:url(images/menu_left_bg_07.png) no-repeat left center;
+}
+nav h2 span{
+    display: block;
+    padding:0 31px;
+}
+nav h2.on span{
+    background:url(images/menu_right_bg_07.png) no-repeat right center;
+}
+nav h2 span:hover{
+    background:url(images/menu_right_bg_07.png) no-repeat right center;
+
+}
+nav h2 a{
+    cursor:pointer;
+    display: block;
+    text-shadow:2px 2px 1px #000;
+    padding:0 3px;
+}
+nav h2.on a{
+    background:#000;
+}
+nav h2 a:hover{
+    text-decoration: none;
+    background:#000;
+}
+nav h3{
+    font-size: 12px;
+    color:#ffffff;
+    font-weight: normal;
+    padding:6px 15px 6px 0;
+    background:#000;
+    line-height: 1.2;
+}
+nav h3 a{
+    cursor:pointer;
+    display: block;
+}
+nav h3.on a{
+    margin-right:-10px;
+    color: #00ffe4;
+}
+nav h3 a:hover{
+    text-decoration: none;
+    margin-right:-10px;
+    color: #00ffe4;
+}
+.subnav{
+    padding-right:31px;
+    border-radius:0 0 0 10px;
+    overflow: hidden;
+}
+.s1 a{
+    padding-top:12px;
+    height:28px;
+}
+.s2 a{
+    padding-top:5px;
+    height:35px;
+}
+.content{
+    color: #fff;
+    width: 72%;
+    line-height: 1.5;
+    font-size: 14px;
+    text-shadow:0 0 14px #00ffe4;
+}
+.detail p{
+    margin:11px 0;
+}
+.detail img{
+    border-radius:9px;
+    box-shadow: 1px 1px 8px #000
+}
+.detail table td{
+    padding:7px 15px 9px;
+    border:solid 1px #00ffe4;
+}
+.imgfl{
+    float: left;
+    margin:0 20px 20px 0;
+}
+.imgfr{
+    float: right;
+    margin:0 0 20px 20px;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom:25px;:;
+}
+footer{
+    color: #999;
+    width:1000px;
+    margin:0 auto;
+    text-align: right;
+    padding:40px 0 20px;
+}
