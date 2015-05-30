@@ -121,6 +121,8 @@ body{
 header{
     height: 57px;
     padding:30px 0 50px;
+    width:1000px;
+    margin:0 auto;
 }
 .logo a{
     display:block;
@@ -130,6 +132,9 @@ header{
     color:#fff;
     font-size: 48px;
     text-indent: -9999px;
+}
+.main{
+    width:100%;
 }
 nav{
     width:24%;
@@ -240,4 +245,127 @@ footer{
     margin:0 auto;
     text-align: right;
     padding:40px 0 20px;
+    line-height: 1.5;
+}
+footer span{
+    font-weight: bold;
+    color: #bbb;
+}
+.landingpage{
+    height:400px;
+    width:970px;
+    margin:50px auto 0;
+    /*border-width:150px;
+    border-style:solid none;
+    border-color:#d52b1e;*/
+    background:url(images/landingbg.jpg) no-repeat center;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    text-shadow:0 0 5px #000;
+    line-height: 1.4;
+}
+
+.intro{
+    left:250px;
+    top:-450px;
+    color:#fff;
+    font-size: 30px;
+}
+.flag{
+    left:750px;
+    top:-450px;
+    color:#00ffe4;
+    
+    font-size: 52px;
+    font-weight: bold;
+}
+.a-btn {
+    background: -moz-linear-gradient(center top , #80a9da 0%, #6f97c5 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #5d81ab;
+    border-radius: 20px;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8) inset, 1px 1px 3px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(188, 188, 188, 0.5);
+    clear: both;
+    display: inline-block;
+    float: left;
+    height: 38px;
+    margin: 10px 0;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 70px;
+    position: relative;
+    transition: all 0.3s linear 0s;
+    z-index: 10;
+}
+.a-btn:hover {
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8) inset, 1px 1px 3px rgba(0, 0, 0, 0.2);
+    padding-right: 170px;
+    text-decoration: none;
+}
+.a-btn-text {
+    color: #446388;
+    display: block;
+    font-size: 18px;
+    padding-top: 5px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+    transition: all 0.2s linear 0s;
+    white-space: nowrap;
+}
+.a-btn-slide-text {
+    background: none repeat scroll 0 0 #63707e;
+    box-shadow: -1px 0 1px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.2) inset;
+    color: #fff;
+    font-size: 14px;
+    height: 100%;
+    line-height: 38px;
+    overflow: hidden;
+    position: absolute;
+    right: 52px;
+    text-align: left;
+    text-indent: 10px;
+    text-shadow: 0 -1px 1px #363f49;
+    top: 0;
+    transition: width 0.3s linear 0s;
+    white-space: nowrap;
+    width: 0;
+}
+.a-btn-icon-right {
+    border-left: 1px solid #5d81ab;
+    box-shadow: 1px 0 1px rgba(255, 255, 255, 0.4) inset;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 52px;
+}
+.a-btn-icon-right span {
+    background: url("images/arrow_right.png") no-repeat scroll 50% 55% transparent;
+    height: 38px;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    transition: all 0.3s linear 0s;
+    width: 38px;
+}
+
+.a-btn:hover .a-btn-text {
+    color: #fff;
+    text-shadow: 0 1px 1px #5d81ab;
+}
+.a-btn:hover .a-btn-slide-text {
+    width: 100px;
+}
+.a-btn:hover .a-btn-icon-right span {
+    opacity: 1;
+}
+.headimg{
+    top:85px;
+    left:-1000px;
+}
+.landingpagebtn{
+    z-index: 9;
+    display:block;
+    width: 100%;
+    height: 100%;
 }
